@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Food and Nutrition Blog</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Healty Bites: Food and Nutrition Blog</h1>
+
+            <nav>
+                <a href="#heatly-plate">Healty Plate</a>
+                <a href="#nutrition-tips">Nutrition Tips</a>
+                <a href="#video">Watch Video</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="healthy-olate">
+                <h2>Building a Healthy Plate</h2>
+
+                <article>
+                    <h3>Why a Balanced Meal Matters</h3>
+
+                    <figure>
+                        <imgsrc="https://images.unsplash.com/photo-154020773420-3366772f4999?w=300&h=200&fit=crop"
+                        alt="A balanced meal plate with fruits,vegetables, grains, and protein"
+                        width="300"
+                        height="200">
+                        <figcaption>
+                            A balanced plate includes water, fruits, vegetables, grains,  and protein.
+                        </figcaption>
+                    </figure>
+                    
+                    <p>
+                        A healthy plate gives our body the energy it needs to study, play, think, and grow.
+                        It should include colorful fruits, fresh vegetables, grains and protein rich foods.
+                    </p>
+
+                </article>
+                
+                <article>
+                    <h3>Smart Snack Choices</h3>
+
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=300&h=200&fit=crop"
+                        alt="Healthy Snacks and fresh foods ingreditents"
+                        width="300"
+                        height="200"
+                        >
+                        <figcaption>
+                            healthy Snacks include fruits, nuts, yoghurt, homemade food.
+                        </figcaption>
+                    </figure>
+
+                    <P>
+                        Snacks can be healthy when we choose foods thst give energy instead of sugar. fruits, nuts etc.. are beter than chips, and sugary drinks.
+                    </P>
+                </article>
+            </section>
+            <section>
+
+                    <h2> Nutrition tips for students</h2>
+
+                    <article>
+                        <h3>Drink Enough Water</h3>
+
+                        <p>
+                            Water helps the body stay active, suppports digestion, and keeps the brain foucsed.
+                            Students should carry a water bottle and drink water throughout the day.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Eat colorful foods</h3>
+
+                        <p>Different colors in fruits and vegatable give differents.A clourful plate often means a healthier plate.</p>
+
+                    </article>
+            </section>
+
+            <section id="contact">
+                <h2>Contact the Nutrition Blog Team</h2>
+
+                <p>
+                    Have healthy recipes or food tips to share? Send it to us.
+             </p>
+             <p>
+                Email:
+                <a href="malito:nutritionblog@example.com">nutritionblog@example.com</a>
+             </p>
+            </section>
+
+        </main>
+    </body>
+</html>
