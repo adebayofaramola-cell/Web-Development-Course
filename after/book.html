@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Donation Form</title>
+    </head>
+    <body>
+
+        <h1>Book Donation Form</h1>
+        <p>Fill in the form below to donate books to the libary!</p>
+        <hr>
+
+        <form>
+            ,<fieldset>
+                <legend>Donor Deatails</legend>
+
+                <label>Your Name</label><br>
+                <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+                <label>Donor Id</label><br>
+                <input type="password" id="donor-id" placeholder="Enter your donor ID"><br><br>
+
+                <label>Donor Date</label><br>
+                <input type="date" id="donation date"><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Book Details</legend>
+
+                <label>Choose a Book Category</label>
+                <select id="category">
+                    <option value="">-- Select a category --</option>
+                    <option value="fiction">fiction</option>
+                    <option value="science">science</option>
+                    <option value="history">history</option>
+                    <option value="education">education</option>
+                </select><br><br>
+
+                <label>Book Condition</label>
+                <input type="radio" name="condition" value="new">Like New<br>
+                <input type="radio" name="condition" value="good">good<br>
+                <input type="radio" name="condition" value="used">used<br>
+
+                <label>Book Title or Additional Notes</label><br>
+                <textarea id="notes" rows="3" cols="35"
+                placeholder="e,g. The book title,author name, or any notes."></textarea><br>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferred Drop-off Days</legend>
+
+                <input type="checkbox" value="mon">Monday<br>
+                <input type="checkbox" value="wed">Wednesday<br>
+                <input type="checkbox" value="fri">Friday<br>
+
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Donate My Book">
+            
+        </form>
+    </body>
+</html>
