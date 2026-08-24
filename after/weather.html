@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>My Weather App Homepage</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, ;
+            }
+
+            body{
+                background-color: rgb(67, 86, 172);
+                background-image: radial-gradient(circle, white 2px, transparent 3px);
+                background-size: 40px 40px;
+                background-repeat: repeat;
+                color: #fcfcfc;
+                text-align: center;
+            }
+
+            h1{
+                font-size: 36px;
+                color: #fcfcfc;
+            }
+
+            .subtitle{
+                font-size: 18px;
+                color: rgb(119, 154, 203);
+            }
+
+            .weather-card{
+                width: 400px;
+                border: 3px border white;
+                border-radius: 20px;
+                background-image: linear-gradient(to bottom right rgb(148, 148, 202), rgb(186, 189, 207));
+            }
+
+            .weather-icon{
+                font-size: 70px;
+                animation: floatcloud 3s infinite alternate;
+            }
+
+            #temperature {
+                font-size: 48px;
+                font-weight: bold;
+                color: rgb(172, 244, 244);
+            }
+
+            .details{
+                font-size: 18px;
+                color: blueviolet;
+            }
+
+            .forecast-section{
+                width: 600px;
+                border: 3px solide white;
+                border-radius: 15px;
+                background-image: radial-gradient(circle, white, red);
+                color: black;
+            }
+
+            .forecast-title{
+                color: beige;
+            }
+
+            .day{
+                border: 2px solid forestgreen;
+                font-size: 17px;
+                color: blanchedalmond;
+            }
+
+            h2, h3{
+                color: #fcfcfc;
+            }
+
+            form{
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(20);
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1>My Weather App Homepage</h1>
+
+        <p class="subtitle">
+            Check todays weather, and plan your day better.
+        </p>
+
+        <div class="weather-card">
+
+            <h2>Todays Weather</h2>
+
+            <div class="weather-icon">Cloud</div>
+
+            <p id="tempreature">28°C</p>
+
+            <p class="details">City: Bengaluru</p>
+            <p class="details">Condition: Partly cloudy</p>
+            <p class="details">Humidity: 62%</p>
+            <p class="details">Wind Speed: 12km/h</p>
+        </div>
+
+        <h2>Weekly Forecast</h2>
+        <div class="forecast-section">
+            <h3 class="forecast-title">Next 5 days</h3>
+
+            <p class="day">Monday: Sunny - 30°C</p>
+            <p class="day">Tuesday: Cloudy - 27°C</p>
+            <p class="day">Wednesday: Rainy - 24°C</p>
+            <p class="day">Thursday: Widny - 26°C</p>
+            <p class="day">Friday: Stormy - 23°C</p>
+        </div>
+
+    </body>
+</html>
