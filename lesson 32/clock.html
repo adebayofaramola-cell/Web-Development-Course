@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background: linear-gradient(135deg, #09152f, #1f4e78, #3a86a8);
+        }
+
+        .clock-card {
+            width: min(90%, 520px);
+            padding: 40px 24px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 24px;
+            background: rgba(5, 20, 40, 0.55);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        #MyClockDisplay {
+            font-family: "Courier New", monospace;
+            font-size: clamp(2.5rem, 10vw, 5rem);
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-shadow: 0 0 16px rgba(121, 224, 255, 0.85);
+        }
+
+        @media (max-width: 480px) {
+            .clock-card {
+                padding: 30px 12px;
+            }
+
+            #MyClockDisplay {
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="clock-card">
+        <h1>Digital Clock</h1>
+        <div id="MyClockDisplay">Loading...</div>
+    </main>
+
+    <script>
+        function showTime() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            let session = "AM";
+
+            if (hours >= 12) {
+                session = "PM";
+            }
+
+            if (hours > 12) {
+                hours -= 12;
+            } else if (hours === 0) {
+                hours = 12;
+            }
+
+            hours = String(hours).padStart(2, "0");
+            minutes = String(minutes).padStart(2, "0");
+            seconds = String(seconds).padStart(2, "0");
+
+            document.getElementById("MyClockDisplay").textContent =
+                `${hours}:${minutes}:${seconds} ${session}`;
+
+            setTimeout(showTime, 1000);
+        }
+
+        showTime();
+    </script>
+</body>
+
+</html>
